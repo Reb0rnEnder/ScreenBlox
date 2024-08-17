@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-Github = "https://raw.githubusercontent.com/RebornEnder/screenblox/main/"
+Github = "https://raw.githubusercontent.com/Reb0rnEnder/screenblox/main/"
 DataPath = os.environ['USERPROFILE'] + "\\ScreenshareData"
 Version = f"{DataPath}\\Version.json"
 AppPath = f"{DataPath}\\App.py"
