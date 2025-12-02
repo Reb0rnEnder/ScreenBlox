@@ -2,7 +2,6 @@ from flask import Flask, Response, request
 from gevent.pywsgi import WSGIServer
 from PIL import Image, ImageGrab
 import os
-import os
 import cv2
 import json
 import requests
@@ -210,7 +209,9 @@ if __name__ == '__main__':
     print(f'[+] Mouse Status: {str(config["mouse"])}.')
     print(f'[+] Roblox GameJoin Status: {str(config["roblox"])}.')
     print(f'[+] Roblox Executable Path: {config["robloxpath"]}.')
-    print(f'[+] Hosting Server On: http://127.0.0.1:8080.\n')
+    print(f'[+] Hosting Server On: http://0.0.0.0:8080.\n')
     print("\n[!] Dedicated message from RebornEnder to 'JustAMale':\nplease dont steal stuff and claim it as your own :P this project took many weeks to complete and would like some credit!\n")
-    server = WSGIServer(('127.0.0.1', 8080), app)
+    server = WSGIServer(('0.0.0.0', 8080), app)
     server.serve_forever()
+
+

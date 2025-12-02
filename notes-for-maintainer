@@ -1,0 +1,9 @@
+i have some ideas to update the code:
+
+1. how about we use https://tunnel.pyjam.as instead of playit? it goes directly through Wireguard (popular VPN + tcp fowarding tool) which is known to be more reliable.
+i guess the user can also selfhost FRP (https://github.com/fatedier/frp) on a Oracle Cloud server (or a cheap 5$/mo Linode server)
+
+2. don't change the license please
+
+3. if you can fix up the readme and optimize a bit of the code (for example, i replaced 127.0.0.1 in the App.py script with 0.0.0.0 which exposes the server to all the local IPs on your specific system (eg 127.0.0.1, [::1], your computers **LOCAL** ip, probably some more im missing)
+
