@@ -210,8 +210,8 @@ if __name__ == '__main__':
     print(f'[+] Roblox GameJoin Status: {str(config["roblox"])}.')
     print(f'[+] Roblox Executable Path: {config["robloxpath"]}.')
     print(f'[+] Hosting Server On: http://0.0.0.0:8080.\n')
-    print("\n[!] Dedicated message from RebornEnder to 'JustAMale':\nplease dont steal stuff and claim it as your own :P this project took many weeks to complete and would like some credit!\n")
     server = WSGIServer(('0.0.0.0', 8080), app)
     server.serve_forever()
+
 
 
